@@ -1,0 +1,19 @@
+group 'edu.xavier.csci260.dentinger.hw4'
+version '0.1.0'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    compile 'edu.xavier.csci260.dentinger.platin:platin:0.2.0'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'org.mockito:mockito-core:2.+'
+}
